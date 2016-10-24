@@ -2,6 +2,13 @@
 
 
 $(function() {
+
+      $("#search-input").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#search-btn").click();
+    }
+});
+
       $("#search-btn").click( function()
            {
            	 var search_info = $('#search-input').val();
